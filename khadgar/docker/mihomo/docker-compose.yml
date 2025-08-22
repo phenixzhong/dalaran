@@ -1,0 +1,30 @@
+services:
+  mihomo:
+    image: metacubex/mihomo
+    container_name: mihomo
+    restart: unless-stopped
+    network_mode: "host"
+    volumes:
+      - /home/phenix/docker/mihomo/config:/root/.config/mihomo
+    tty: true
+    cap_add:
+      - NET_ADMIN # 允许容器创建和管理网络接口（TUN）
+    devices:
+      - /dev/net/tun:/dev/net/tun # 将TUN设备挂载到容器内  
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+
+  metacubexd:
+    image: ghcr.io/metacubex/metacubexd
+    container_name: metacubexd
+    restart: unless-stopped
+    ports:
+      - "9091:80"
+    depends_on:
+      - mihomo
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
