@@ -1,0 +1,56 @@
+# VM/LXC Services
+dhcp-host=BC:24:11:8A:D9:3F,khadgar,10.0.10.101
+dhcp-host=02:AA:DD:E8:CB:76,guldan,10.0.10.102
+dhcp-host=BC:24:11:A0:C1:C2,velen,10.0.10.103
+dhcp-host=BC:24:11:51:9B:42,antonidas,10.0.10.104
+dhcp-host=BC:24:11:D4:00:BC,uther,10.0.10.201
+dhcp-host=BC:24:11:28:BA:76,thrall,10.0.10.202
+dhcp-host=BC:24:11:38:83:6A,medivh,10.0.10.203
+
+# Personal Devices
+dhcp-host=0E:6F:11:35:8F:48,Goblin-Tinker,10.0.100.10
+dhcp-host=A2:2F:98:52:B6:B8,Dark-Knight,10.0.100.18
+dhcp-host=3A:55:8D:53:60:94,Mystery-Belt,10.0.100.12
+dhcp-host=B6:E9:0D:19:D5:0F,Huntress,10.0.100.13
+dhcp-host=BA:18:51:52:4E:73,Oracle,10.0.100.14
+dhcp-host=EE:E1:7D:AF:C3:CC,robin,10.0.100.15
+dhcp-host=AA:72:6E:EF:7B:F1,Navigator,10.0.100.16
+dhcp-host=CA:EC:F0:D4:0C:3D,Lorewalker,10.0.100.17
+dhcp-host=C0:95:6D:76:80:AF,sorceress,10.0.100.50
+
+# Personal Devices
+dhcp-host=0E:6F:11:35:8F:48,Goblin-Tinker,10.0.100.10
+dhcp-host=A2:2F:98:52:B6:B8,Dark-Knight,10.0.100.11
+dhcp-host=3A:55:8D:53:60:94,Mystery-Belt,10.0.100.12
+dhcp-host=B6:E9:0D:19:D5:0F,Huntress,10.0.100.13
+dhcp-host=BA:18:51:52:4E:73,Oracle,10.0.100.14
+dhcp-host=EE:E1:7D:AF:C3:CC,robin,10.0.100.15
+dhcp-host=AA:72:6E:EF:7B:F1,Navigator,10.0.100.16
+dhcp-host=CA:EC:F0:D4:0C:3D,Lorewalker,10.0.100.17
+dhcp-host=C0:95:6D:76:80:AF,sorceress,10.0.100.50
+
+# Smart Home & IoT
+dhcp-host=1C:82:59:90:12:8B,undercity,10.0.110.6
+dhcp-host=7C:C2:94:C9:CB:EB,Seer,10.0.110.14
+dhcp-host=AC:BC:B5:D1:E2:B6,tyrande,10.0.110.10
+dhcp-host=94:EA:32:A9:10:7A,maiev,10.0.110.11
+dhcp-host=F4:34:F0:85:75:CB,jaina,10.0.110.12
+dhcp-host=10:BB:F3:88:11:3D,wisp,10.0.110.20
+dhcp-host=AC:93:C4:42:93:CC,frost,10.0.110.30
+dhcp-host=AC:93:C4:42:6C:77,fire,10.0.110.31
+dhcp-host=D4:84:57:E9:4F:E1,storm,10.0.110.32
+dhcp-host=88:F2:BD:82:AA:AA,moonwell,10.0.110.33
+dhcp-host=88:F2:BD:90:F3:84,sunwell,10.0.110.34
+dhcp-host=44:6F:F8:0A:E3:09,druid,10.0.110.35
+dhcp-host=88:97:46:29:DF:11,shaman,10.0.110.36
+dhcp-host=88:F2:BD:9F:25:01,tidefury,10.0.110.37
+dhcp-host=C8:D7:78:42:CE:59,alchemist,10.0.110.40
+dhcp-host=CC:B5:D1:48:A1:FD,sapper,10.0.110.45
+dhcp-host=B4:60:ED:1D:C5:7E,geyser,10.0.110.46
+dhcp-host=64:9E:31:10:BD:8F,well,10.0.110.47
+dhcp-host=CC:B5:D1:60:E8:8C,far-sight,10.0.110.48
+dhcp-host=C8:5C:CC:F0:B0:56,light,10.0.110.49
+dhcp-host=30:03:C8:2E:AE:77,chromie,10.0.110.50
+dhcp-host=C0:18:03:B1:73:55,gnome,10.0.110.80
+dhcp-host=54:EF:44:46:B8:B6,arcane,10.0.110.90
+dhcp-host=54:EF:44:76:72:09,Sentinel,10.0.110.91
