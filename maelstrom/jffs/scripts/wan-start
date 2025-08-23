@@ -1,0 +1,28 @@
+#!/bin/sh
+
+# 等待网络接口就绪
+sleep 15
+
+# --- [配置变量] ---
+# 策略路由表的数字ID (1-252之间，避免使用系统保留ID)
+PBR_TABLE_ID=100
+# 需要应用策略路由的源IP地址段
+SOURCE_SUBNET="10.0.100.0/24"
+# 新的网关地址 (antonidas)
+NEW_GATEWAY="10.0.10.104"
+# --- [配置结束] ---
+
+# 清理旧的规则和路由，防止重启后重复添加
+# ?.?接使用 Table ID
+ip rule del from $SOURCE_SUBNET table $PBR_TABLE_ID > /dev/null 2>&1
+ip route flush table $PBR_TABLE_ID > /dev/null 2>&1
+
+# 添加新的规则和路由
+# 1. 添加规则: 所有来自 SOURCE_SUBNET 的流量, 查询 PBR_TABLE_ID (100) 路由表
+ip rule add from $SOURCE_SUBNET table $PBR_TABLE_ID
+
+# 2. 为新路由表添加默认路由: 通过 NEW_GATEWAY 出去
+ip route add default via $NEW_GATEWAY table $PBR_TABLE_ID
+
+# 刷新路由缓存
+ip route flush cache
