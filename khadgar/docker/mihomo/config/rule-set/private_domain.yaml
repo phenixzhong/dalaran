@@ -1,0 +1,10 @@
+payload:
+  # Private Domain
+  - DOMAIN-SUFFIX,arpa
+  - DOMAIN-SUFFIX,internal
+  - DOMAIN-SUFFIX,lan
+  - DOMAIN-SUFFIX,local
+  - DOMAIN-SUFFIX,localhost
+  - DOMAIN-SUFFIX,test
+  # Your Homelab Domain
+  - DOMAIN-SUFFIX,home
