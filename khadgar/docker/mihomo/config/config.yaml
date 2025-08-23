@@ -50,7 +50,6 @@ tun:
 # DNS模块
 dns:
   enable: true
- #listen: 0.0.0.0:1053
   listen: 0.0.0.0:53
   ipv6: false
   respect-rules: true
@@ -79,31 +78,30 @@ rule-providers:
   netflix:
     type: http
     behavior: classical
-    url: 'https://gist.github.com/phenixzhong/115620fc2fce83886a5c8006fef83ee2/raw/0b142f5fc8bbee7585c28b86777ae361838a1469/netflix.yaml'
+    url: 'https://github.com/phenixzhong/dalaran/raw/refs/heads/main/khadgar/docker/mihomo/config/rule-set/netflix.yaml'
     path: '/root/.config/mihomo/rule-set/netflix.yaml'
     interval: 86400
 
   disneyplus:
     type: http
     behavior: classical
-    url: 'https://gist.github.com/phenixzhong/b5412c6e2ceb3d398b6a8529d4c25e13/raw/d66254c2fc41da3a2618b79362c45744e417bc2d/disneyplus.yaml'
+    url: 'https://github.com/phenixzhong/dalaran/raw/refs/heads/main/khadgar/docker/mihomo/config/rule-set/disneyplus.yaml'
     path: '/root/.config/mihomo/rule-set/disneyplus.yaml'
     interval: 86400
 
   private_domain:
     type: file
     behavior: domain
+    url: 'https://github.com/phenixzhong/dalaran/raw/refs/heads/main/khadgar/docker/mihomo/config/rule-set/private_domain.yaml'
     path: '/root/.config/mihomo/rule-set/private_domain.yaml'
+    interval: 86400
 
   private_ip:
     type: file
     behavior: ipcidr
+    url: 'https://github.com/phenixzhong/dalaran/raw/refs/heads/main/khadgar/docker/mihomo/config/rule-set/private_ip.yaml'
     path: '/root/.config/mihomo/rule-set/private_ip.yaml'
-
- #  cn_domain:
- #  type: file
- #  behavior: domain
- #  path: '/root/.config/mihomo/rule-set/cn_domain.yaml'
+    interval: 86400
 
 proxy-providers:
   HK:
