@@ -20,7 +20,7 @@ dhcp-host=C0:95:6D:76:80:AF,sorceress,10.0.100.50
 
 # Personal Devices
 dhcp-host=0E:6F:11:35:8F:48,Goblin-Tinker,10.0.100.10
-dhcp-host=A2:2F:98:52:B6:B8,Dark-Knight,10.0.100.11
+dhcp-host=E2:B7:77:CA:24:6C,Dark-Knight,10.0.100.11
 dhcp-host=3A:55:8D:53:60:94,Mystery-Belt,10.0.100.12
 dhcp-host=B6:E9:0D:19:D5:0F,Huntress,10.0.100.13
 dhcp-host=BA:18:51:52:4E:73,Oracle,10.0.100.14
